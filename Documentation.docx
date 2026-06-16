@@ -1,0 +1,12 @@
+Land into index page.
+
+Students choose subject on index page --> link to subject_nav page.
+
+subject_nav page is a list of links of units.
+subject_nav includes “back” button.
+
+Selecting unit brings student to unit page.
+
+Unit page injects content from contents folder in required order.
+
+Unit page includes “back” button.

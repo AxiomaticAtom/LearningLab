@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Atomic Structure</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="axiomaticAtom">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/stylesheet.css">
+  <script src="../scripts/CourseData.js"></script>
+  <script src="../scripts/contentInjection.js"></script>
+  <script src="../scripts/slides.js"></script>
+  <script src="../scripts/chargeRepulsion.js"></script>
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+</head>
+
+<body>
+<header>
+  <a href="../subjectNav/chemistryNavigation.html" id="headerButtonLeft">← Change Unit</a> <!--Back to unit selection-->
+  <a href="#" id="headerButtonRight" onclick="toggleSectionMenu()">Sections</a> <!--jump between sections in units (e.g. different slides shows), drop down menu top right corner-->
+  <h1>Unit: Atomic Structure</h1>
+</header>
+
+
+<div id="display"></div>
+
+<nav id="navBar">
+  <div>
+    <button class="navButtonUnitPage slideButton" id="previousSlide" onclick="prevSlide()">Previous</button> <!--for slideshows etc-->
+    <button class="navButtonUnitPage slideButton" id="nextSlide" onclick="nextSlide()">Next</button> <!--for slideshows etc-->
+  </div>
+  <div>
+  <button class="navButtonUnitPage" onclick="previousSection(unit), setSlides(), startAnimationsIfReady()">Previous Section</button> <!--next section in unit, e.g. new slideshow etc-->
+  <button class="navButtonUnitPage" onclick="nextSection(unit), setSlides(), startAnimationsIfReady()">Next Section</button> <!--next section in unit, e.g. new slideshow etc-->
+  </div>
+ </nav>
+
+
+<script>
+let unit = typesOfParticles;  //set unit to be the name of the Unit Data array in CourseData.js
+
+// initial load
+inject(unit,currentIndex);
+setSlides();
+createSectionsMenu(unit);
+
+</script>
+
+</body>

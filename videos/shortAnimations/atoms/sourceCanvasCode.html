@@ -1,0 +1,27 @@
+<body>
+  <canvas id="proton" height="500" width="500"></canvas>
+</body>
+
+<script>
+function drawProtonRepulsion(canvasId) {
+
+  let canvas = document.getElementById(canvasId);
+  let context = canvas.getContext("2d");
+  let width = canvas.width;
+  let height = canvas.height;
+  let radius = canvas.width/10;
+  let fontSize = canvas.width/10;
+  context.font = `${fontSize}px Arial`;
+  canvas.width = canvas.clientWidth;
+  canvas.height = canvas.clientHeight;
+
+  context.beginPath();
+  context.arc(width/2 - 2*radius, height/2, radius, 0, 2 * Math.PI);
+  context.arc(width/2 + 2*radius, height/2, radius, 0, 2 * Math.PI);
+  context.stroke();
+
+}
+
+drawProtonRepulsion(proton);
+</script>
+

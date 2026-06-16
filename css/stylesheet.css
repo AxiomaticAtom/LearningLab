@@ -1,0 +1,260 @@
+:root {
+  --font-size: clamp(16px,2vw, 24px);
+  --ACC-button-color: #ffe6fd;
+  --highlight: #FFDD00;
+  --open-details: #ffb6c1;
+  --key-words-border: #246bce;
+  --key-words-background: #f5f9ff;
+  --main-table-1-header-background: #246bce;
+  --main-table-1-header-font-color: white;
+}
+
+body {
+  font-family:  sans-serif;
+  font-size: var(--font-size);
+  text-align: center;
+  padding-top: env(safe-area-inset-top);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+.selection_button {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.selection_button:not(.greyed):hover {
+  background: #FFDD00;
+  transform: scale(1.05);
+}
+
+.navPageHeader {
+  text-align: center;
+}
+
+#headerButtonLeft {
+  position: absolute;
+  left: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#headerButtonRight {
+  position: absolute;
+  right: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.headerButtonLeft:hover ,.headerButtonRight:hover {
+  transform: scale(1.05)
+}
+.greyed {
+  background: #D3D3D3;
+}
+
+#navigation_links_list {
+  list-style-type: none;
+}
+
+#navigation_links_list li {
+  margin-bottom: 2vh;
+}
+
+.AAC {
+background: var(--ACC-button-color);
+}
+
+#navBar{
+  display: flex; 
+  justify-content: space-between;
+  width:80vw;
+  max-width: 1400px;
+  margin: auto;
+}
+.navButtonUnitPage {
+  font-size: var(--font-size);
+  padding: 5px;
+  min-width: 10vw;
+  margin-top: 1vh;
+}
+
+#display {
+  border: 1px solid black;
+  margin: auto;
+  width:80vw;
+  height: calc(90vh - 140px);
+  overflow-y: auto;
+  padding: 1vh 1vw 1vh 1vw;
+  max-width: 1400px;
+  border-radius: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+
+#learningIntentions {
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 4vh;
+}
+
+#learningIntentions th, #learningIntentions td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+#learningIntentions thead {
+  background: #256bce;
+  color: white;
+}
+
+.imgWrapper20vw {
+  max-width: 20vw;
+  margin: auto;
+}
+
+.imgWrapper30vw {
+  max-width: 30vw;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#sectionsMenu {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+
+  flex-direction: column;
+  gap: 5px;
+
+  width: min(400px, 80vw);
+  background: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+#sectionsMenu button {
+  font-size: var(--font-size);
+  padding: 8px;
+  text-align: center;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 90%;
+  cursor: pointer;
+}
+
+#sectionsMenu button:hover {
+  background: var(--highlight);
+}
+
+.hide {
+  display: none;
+}
+
+ul {
+    display: inline-block;
+    padding-left: 0;
+    text-align: left;
+}
+
+.checkYourUnderstanding {
+  text-align: left;
+  padding: 2vw;
+}
+
+details {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 2vh;
+  transition: 0.5s ease;
+}
+
+details[open] {
+  background: var(--open-details)
+}
+
+details ul{
+  margin-left: 4vw;
+}
+
+details img {
+  max-width: 30vw;
+}
+
+h2, h3 {
+  margin-top: 0;
+  padding-top: 4vh;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+.keyWords {
+  text-align: left;
+  margin-left: 2vw;
+  border-left:  6px solid var(--key-words-border);
+  background: var(--key-words-background);
+  padding: 1.5rem;
+  border-radius: 0 10px 10px 0;
+
+}
+
+.keyWords ul {
+  margin-left: 3vw;
+}
+
+li {
+  margin-bottom: 1.5vh;
+}
+
+.mainTable1{
+  margin: auto;
+  border-collapse: collapse;
+} 
+
+.mainTable1 th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.mainTable1 th {
+  background: var(--main-table-1-header-background);
+  color: var(--main-table-1-header-font-color);
+}
+
+.detailsTable {
+  margin-top: 2vh;
+}
+
+.center {
+text-align: center;
+}
+
+summary .mainTable1 {
+  margin-top: 2vh;
+}
+
+.keyIdea {
+  border-radius: 5px;
+  background-color: pink;
+}
