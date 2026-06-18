@@ -45,7 +45,6 @@ document.addEventListener("click", function (eventObject) {
 
 function createSectionsMenu(unit) {
   let menu = document.createElement("div");
-  let header = document.getElementById("unitHeader");
   menu.id = "sectionsMenu";
   menu.classList.add("hide");
   for (let i=0; i<unit.length; i++) {
@@ -58,5 +57,5 @@ function createSectionsMenu(unit) {
     };
     menu.append(button)
   }
-  document.body.appendChild(header)
+  document.body.appendChild(menu)
 }
