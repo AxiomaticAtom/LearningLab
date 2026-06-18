@@ -530,5 +530,13 @@ summary .mainTable1 {
 
   }
 
+  #sectionsMenu {
+    position: relative;
+    top: 20%;
+    right: 50%;
+    transform: translate(-50%);
+    
+  }
+
 } 
 
