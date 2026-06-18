@@ -242,21 +242,19 @@ summary .mainTable1 {
 .keyIdea {
   border-radius: 5px;
   background-color: pink;
-}#unitHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-/* When the screen is 600px or smaller */
-@media (max-width: 600px) {
-  #unitHeader {
-    flex-direction: column; /* Forces vertical stacking */
-    text-align: center;
-  }
-  
-  #unitHeader h1 {
-    order: -1; /* Moves the title to the top when stacked */
-    margin-bottom: 10px;
-  }
+#unitHeader {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap to a new line */
+  align-items: center; /* Keeps them vertically centered */
+  justify-content: space-between; /* Spreads them out */
+  padding: 10px;
+  gap: 15px; /* Adds space between elements when they wrap */
+}
+
+#unitHeader h1 {
+  flex: 1; /* Allows the title to take available middle space */
+  text-align: center;
+  margin: 0;
 }
