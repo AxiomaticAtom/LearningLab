@@ -521,7 +521,7 @@ summary .mainTable1 {
   #sectionsMenu {
     position: absolute;
     /* 'top: 100%' now works because unitHeader is 'relative' */
-    top: 100%; 
+    top: 0%; 
     left: 50%;
     transform: translateX(-50%);
     width: 90vw; /* Keeps it from being wider than the phone */
