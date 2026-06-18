@@ -246,15 +246,17 @@ summary .mainTable1 {
 
 #unitHeader {
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to a new line */
-  align-items: center; /* Keeps them vertically centered */
-  justify-content: space-between; /* Spreads them out */
+  /* Default: Row of three */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
-  gap: 15px; /* Adds space between elements when they wrap */
 }
 
-#unitHeader h1 {
-  flex: 1; /* Allows the title to take available middle space */
-  text-align: center;
-  margin: 0;
+/* Force the Column switch at your chosen breakpoint */
+@media (max-width: 768px) {
+  #unitHeader {
+    flex-direction: column; /* Switches to column */
+    gap: 10px;              /* Adds space between the stacked items */
+  }
 }
