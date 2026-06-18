@@ -38,21 +38,6 @@ a {
   text-align: center;
 }
 
-#headerButtonLeft {
-  position: absolute;
-  left: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-#headerButtonRight {
-  position: absolute;
-  right: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
-}
 
 .headerButtonLeft:hover ,.headerButtonRight:hover {
   transform: scale(1.05)
