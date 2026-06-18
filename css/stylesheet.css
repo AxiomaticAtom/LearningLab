@@ -39,6 +39,7 @@ a {
 }
 
 #headerButtonLeft, #headerButtonRight, .navButtonUnitPage {
+  display: inline-block;
   border: 1px solid black;
   border-radius: 5px;
   font-size: var(--font-size);
@@ -51,7 +52,7 @@ a {
   margin-top: 1vh;
 }
 
-.headerButtonLeft:hover ,.headerButtonRight:hover {
+#headerButtonLeft:hover ,#headerButtonRight:hover, .navButtonUnitPage:hover {
   transform: scale(1.05)
 }
 .greyed {
