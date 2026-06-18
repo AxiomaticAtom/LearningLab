@@ -261,3 +261,22 @@ summary .mainTable1 {
   align-items: center;
   padding: 10px;
 }
+
+@media (max-width: 768px) {
+  #unitHeader {
+    flex-direction: column; 
+    gap: 10px;               
+  }
+
+  #sectionsMenu {
+    position: absolute;
+    top: 100%; 
+    right: 50%; /* Puts the right edge at the center */
+    
+    /* This shifts the menu left by exactly 50% of its own width */
+    transform: translateX(50%); 
+    
+    /* Optional: prevent it from being too wide on a phone */
+    width: 90vw; 
+  }
+}
