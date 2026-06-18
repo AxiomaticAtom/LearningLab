@@ -247,7 +247,7 @@ img {
 #sectionsMenu {
 
   position: absolute;
-  top: 100%;
+  top: 0%;
   right: 10px;
 
   flex-direction: column;
