@@ -44,6 +44,7 @@ a {
   font-size: var(--font-size);
   padding: 5px;
   min-width: 15vw;
+  background: transparent;
 }
 
 .navButtonUnitPage {
