@@ -261,16 +261,3 @@ summary .mainTable1 {
   align-items: center;
   padding: 10px;
 }
-
-@media (max-width: 768px) {
-#unitHeader {
-    flex-direction: column; 
-    gap: 10px;               
-  }
-
-  #sectionsMenu {
-    left: 50%;
-    transform: translateX(-50%); /* Centers it under the button */
-    width: 90vw; /* Keeps it from being too wide */
-  }
-}
