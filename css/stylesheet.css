@@ -503,21 +503,13 @@ summary .mainTable1 {
 
 
 #unitHeader {
-
   display: flex;
-
-  /* Default: Row of three */
-
   flex-direction: row;
-
   justify-content: space-between;
-
   align-items: center;
-
   padding: 10px;
-
+  position: relative; /* <--- THIS IS THE MISSING KEY */
 }
-
 
 @media (max-width: 768px) {
   #unitHeader {
