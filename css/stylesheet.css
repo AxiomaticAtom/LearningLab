@@ -38,6 +38,17 @@ a {
   text-align: center;
 }
 
+.headerButtonLeft, .headerButtonRight, .navButtonUnitPage {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: var(--font-size);
+  padding: 5px;
+  min-width: 15vw;
+}
+
+.navButtonUnitPage {
+  margin-top: 1vh;
+}
 
 .headerButtonLeft:hover ,.headerButtonRight:hover {
   transform: scale(1.05)
@@ -64,12 +75,6 @@ background: var(--ACC-button-color);
   width:80vw;
   max-width: 1400px;
   margin: auto;
-}
-.navButtonUnitPage {
-  font-size: var(--font-size);
-  padding: 5px;
-  min-width: 10vw;
-  margin-top: 1vh;
 }
 
 #display {
@@ -253,10 +258,9 @@ summary .mainTable1 {
   padding: 10px;
 }
 
-/* Force the Column switch at your chosen breakpoint */
 @media (max-width: 768px) {
   #unitHeader {
-    flex-direction: column; /* Switches to column */
-    gap: 10px;              /* Adds space between the stacked items */
+    flex-direction: column; 
+    gap: 10px;             
   }
 }
