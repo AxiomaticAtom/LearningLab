@@ -78,11 +78,7 @@ a {
 
 
 
-
-
-.navButtonUnitPage {
-
-  display: inline-block;
+#headerButtonLeft, #headerButtonRight, .navButtonUnitPage {
 
   border: 1px solid black;
 
@@ -96,19 +92,9 @@ a {
 
   background: transparent;
 
-  margin-top: 1vh; /* Keep this here or move to a separate rule */
-
 }
 
 
-
-.navButtonUnitPage:hover {
-
-  transform: scale(1.05);
-
-  cursor: pointer;
-
-}
 
 .navButtonUnitPage {
 
@@ -118,7 +104,11 @@ a {
 
 
 
+.headerButtonLeft:hover ,.headerButtonRight:hover {
 
+  transform: scale(1.05)
+
+}
 
 .greyed {
 
