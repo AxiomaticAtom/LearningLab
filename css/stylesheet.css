@@ -519,24 +519,17 @@ summary .mainTable1 {
 }
 
 
-
 @media (max-width: 768px) {
-
   #unitHeader {
-
     flex-direction: column; 
-
-    gap: 10px;             
-
+    gap: 10px;               
   }
 
   #sectionsMenu {
     position: absolute;
-    top: 20%;
-    right: 50%;
-    transform: translate(-50%);
-    
+
+    top: 100%; /* Sits exactly at the bottom of the parent */
+    left: 50%; /* Moves it to the center */
+    transform: translateX(-50%); /* Pulls it back to be perfectly centered */
   }
-
-} 
-
+}
