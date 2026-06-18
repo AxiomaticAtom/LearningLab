@@ -37,21 +37,31 @@ a {
 .navPageHeader {
   text-align: center;
 }
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 
-#headerButtonLeft {
-  position: absolute;
-  left: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
+    width: min(95vw, 1400px);
+    margin: 0 auto 1rem;
 }
 
+.pageHeader h1 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+@media (max-width: 700px) {
+    .pageHeader {
+        flex-direction: column;
+    }
+}
+
+#headerButtonLeft,
 #headerButtonRight {
-  position: absolute;
-  right: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 5px;
+    position: static;
+    white-space: nowrap;
 }
 
 .headerButtonLeft:hover ,.headerButtonRight:hover {
