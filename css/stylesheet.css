@@ -267,4 +267,10 @@ summary .mainTable1 {
     flex-direction: column; 
     gap: 10px;             
   }
+  #sectionsMenu {
+  position: absolute;
+  top: 100%;
+  right: 50%;  
+  transform: translateX(50%);
+  }
 }
