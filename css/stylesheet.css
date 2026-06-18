@@ -125,22 +125,26 @@ img {
   width: 100%;
   height: auto;
 }
+.menu-container {
+  position: relative; /* This acts as the anchor point */
+  display: inline-block; /* Keeps it tight around the button */
+}
 
 #sectionsMenu {
-  position: absolute;
-  top: 50px;
-  right: 10px;
-
+  position: absolute; /* Moves it relative to .menu-container */
+  top: 100%; /* Places it exactly below the bottom of the button */
+  right: 0;  /* Aligns the right edge of the menu with the button */
+  
+  /* Remove top/right/positioning that were used before */
+  margin-top: 5px; /* Optional: adds a little space between button and menu */
+  
+  /* Keep your other styling */
   flex-direction: column;
-  gap: 5px;
-
   width: min(400px, 80vw);
   background: white;
   border: 1px solid black;
   border-radius: 8px;
   padding: 10px;
-
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
 #sectionsMenu button {
