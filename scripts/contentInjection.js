@@ -57,5 +57,5 @@ function createSectionsMenu(unit) {
     };
     menu.append(button)
   }
-  document.body.appendChild(menu)
+document.getElementById("unitHeader").appendChild(menu);
 }
