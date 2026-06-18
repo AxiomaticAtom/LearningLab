@@ -501,7 +501,7 @@ summary .mainTable1 {
 }
 
 
-
+/* 1. This tells the browser: 'Any absolute items inside here must stay inside this box' */
 #unitHeader {
   display: flex;
   flex-direction: row;
@@ -511,17 +511,19 @@ summary .mainTable1 {
   position: relative; /* <--- THIS IS THE MISSING KEY */
 }
 
+/* 2. Your narrow screen code */
 @media (max-width: 768px) {
   #unitHeader {
-    flex-direction: column; 
-    gap: 10px;               
+    flex-direction: column;
+    gap: 10px;
   }
 
   #sectionsMenu {
     position: absolute;
-
-    top: 100%; /* Sits exactly at the bottom of the parent */
-    left: 50%; /* Moves it to the center */
-    transform: translateX(-50%); /* Pulls it back to be perfectly centered */
+    /* 'top: 100%' now works because unitHeader is 'relative' */
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw; /* Keeps it from being wider than the phone */
   }
 }
