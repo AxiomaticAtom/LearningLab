@@ -247,7 +247,7 @@ img {
 #sectionsMenu {
 
   position: absolute;
-  top: 50px;
+  top: 100%;
   right: 10px;
 
   flex-direction: column;
@@ -517,6 +517,7 @@ summary .mainTable1 {
   #sectionsMenu {
     position: absolute;
     /* 'top: 100%' now works because unitHeader is 'relative' */
+    right: auto;
     top: 100%; 
     left: 50%;
     transform: translateX(-50%);
