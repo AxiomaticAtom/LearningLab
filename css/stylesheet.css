@@ -38,7 +38,8 @@ a {
   text-align: center;
 }
 
-#headerButtonLeft, #headerButtonRight, .navButtonUnitPage {
+
+.navButtonUnitPage {
   display: inline-block;
   border: 1px solid black;
   border-radius: 5px;
@@ -46,15 +47,18 @@ a {
   padding: 5px;
   min-width: 15vw;
   background: transparent;
+  margin-top: 1vh; /* Keep this here or move to a separate rule */
 }
 
+.navButtonUnitPage:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
 .navButtonUnitPage {
   margin-top: 1vh;
 }
 
-#headerButtonLeft:hover ,#headerButtonRight:hover, .navButtonUnitPage:hover {
-  transform: scale(1.05)
-}
+
 .greyed {
   background: #D3D3D3;
 }
