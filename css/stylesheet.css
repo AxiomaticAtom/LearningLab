@@ -346,6 +346,8 @@ details {
 
   transition: 0.5s ease;
 
+  overflow-x: auto;
+
 }
 
 
@@ -478,7 +480,10 @@ text-align: center;
 
 }
 
-
+summary {
+  overflow-x: auto;
+  
+}
 
 summary .mainTable1 {
 
