@@ -10,6 +10,6 @@ let typesOfParticles = [
   new Page("Atomic Structure", "../content/atomicStructure/internalStructureOfTheAtom.html"),
   new Page("Subatomic Particles", "../content/atomicStructure/propertiesOfSubatomicParticles.html"),
   new Page("Charges", "../content/atomicStructure/howChargesInteract.html"),
-  new Page("Elements and Compounds", "../content/atomicStructure/elementsAndCompounds.html" )
-
+  new Page("Elements and Compounds", "../content/atomicStructure/elementsAndCompounds.html" ),
+  new Page("Mixtures vs Pure Substances", "../content/atomicStructure/mixtures.html" )
 ];
