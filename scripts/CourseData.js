@@ -12,5 +12,6 @@ let typesOfParticles = [
   new Page("Charges", "../content/atomicStructure/howChargesInteract.html"),
   new Page("Other Particles", "../content/atomicStructure/otherParticles.html"),
   new Page("Elements and Compounds", "../content/atomicStructure/elementsAndCompounds.html" ),
-  new Page("Mixtures vs Pure Substances", "../content/atomicStructure/mixtures.html" )
+  new Page("Mixtures vs Pure Substances", "../content/atomicStructure/mixtures.html" ),
+  new Page("Chemical Formulas", "../content/atomicStructure/chemicalFormulas.html" )
 ];
